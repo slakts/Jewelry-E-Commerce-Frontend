@@ -1,0 +1,31 @@
+/* SINGLE PRODUCT BREADCRUMB */
+.single-product .breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap; /* uzun ürün adlarında taşma olmasın */
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.single-product .breadcrumb ul li {
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+  color: #6d5c4d; /* sitenin genel bronz kahve tonu */
+}
+
+.single-product .breadcrumb ul li:not(:last-child):after {
+  content: "/";
+  color: #e1bb40;
+  margin: 0 8px;
+}
+
+.single-product .breadcrumb ul li a {
+  color: #7a6e6e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.single-product .breadcrumb ul li a:hover {
+  color: #e1bb40;
+  text-decoration: underline;
+}

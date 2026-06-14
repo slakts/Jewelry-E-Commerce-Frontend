@@ -1,0 +1,32 @@
+/* Collections */
+.collections {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f5f0e6;
+}
+.collections h2 {
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  color: #6d5c4d;
+  margin-bottom: 10px;
+}
+.collections p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  color: #6d5c4d;
+  margin-bottom: 20px;
+}
+.collections button {
+  background: transparent;
+  border: 1px solid #e1bb40;
+  color: #e1bb40;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.collections button:hover {
+  background: #e1bb40;
+  color: #fff;
+}

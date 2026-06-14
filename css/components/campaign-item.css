@@ -1,0 +1,96 @@
+.campaigns .campaign-item {
+  padding: 50px 35px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  flex: 1;
+  color: #6d5c4d; /* Body genel rengi */
+  font-family: "Playfair Display", serif;
+}
+
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.campaigns .campaign-item .campaign-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: "Cinzel", serif;
+  color: #6d5c4d;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.campaigns .campaign-item .campaign-desc {
+  margin: 40px 0;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Buton stili */
+.btn.btn-primary {
+  background-color: #fff; /* Base’deki buton rengi */
+  color: #e1bb40; /* Altın ton */
+  border-color: #e1bb40;
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+/* Hover efekti */
+.btn.btn-primary:hover {
+  background-color: #e1bb40; /* Altın hover */
+  color: #fff; /* Yazı beyaz */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn-primary i {
+  font-size: 14px;
+  transition: transform 0.15s ease;
+}
+
+.btn.btn-primary:hover i {
+  transform: translateX(3px);
+}
+
+/* Arka plan görselleri */
+.campaigns-wrapper:nth-child(1) .campaign-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner1.png);
+}
+
+.campaigns-wrapper:nth-child(1) .campaign-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner2.png);
+}
+
+.campaigns-wrapper:nth-child(2) .campaign-item:nth-child(1) {
+  background-image: url(../../img/campaigns/banner3.png);
+  flex: 5;
+}
+
+.campaigns-wrapper:nth-child(2) .campaign-item:nth-child(2) {
+  background-image: url(../../img/campaigns/banner4.png);
+  flex: 3;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+  .campaigns .campaign-item {
+    width: 100%;
+    flex: unset !important;
+  }
+}

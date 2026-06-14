@@ -1,0 +1,51 @@
+.single-tabs {
+  margin-bottom: 30px;
+}
+
+.single-tabs h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.single-tabs .tab-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  border-bottom: 1px solid #6d5c4d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  list-style: none; /* 🔹 Noktaları kaldırır */
+  padding-left: 0; /* 🔹 Varsayılan boşluğu kaldırır */
+}
+
+.single-tabs .tab-list li {
+  margin: 0;          /* 🔹 Ekstra boşlukları kaldırır */
+}
+
+.single-tabs .tab-list a {
+  text-decoration: none; /* 🔹 Alt çizgiyi kaldırır */
+  color: #6d5c4d;
+}
+
+.single-tabs .tab-list a.active {
+  font-weight: 500;
+  border-bottom: 2px solid #e1bb40;
+}
+
+.single-tabs .tab-panel-descriptions {
+  font-size: 14px;
+}
+
+.single-tabs .tab-panel-information table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.single-tabs .tab-panel-information table th,
+.single-tabs .tab-panel-information table td {
+  border: 1px solid #6d5c4d;
+  padding: 10px 6px;
+  font-size: 14px;
+  text-align: start;
+}

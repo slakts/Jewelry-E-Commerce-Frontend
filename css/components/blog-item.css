@@ -1,0 +1,132 @@
+/* BLOG SECTION */
+.blogs {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.blogs .section-title h2 {
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  color: #6d5c4d;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.blogs .section-title p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: #7a6e6e;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* BLOG LIST GRID */
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* BLOG IMAGE */
+.blog-list .blog-image {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.blog-list .blog-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.blog-list .blog-image:hover img {
+  transform: scale(1.05);
+}
+
+/* BLOG CARD */
+.blog-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* BLOG INFO */
+.blog-item .blog-info {
+  padding: 25px 15px;
+  text-align: center; /* içerik ortalı */
+  color: #6d5c4d;
+  font-family: "Playfair Display", serif;
+}
+
+/* BLOG TOP INFO */
+.blog-item .blog-info-top {
+  font-size: 14px;
+  color: #b2b3b8;
+  margin-bottom: 12px;
+}
+
+/* BLOG TITLE */
+.blog-item .blog-info-center a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6d5c4d;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: color 0.3s;
+  text-align: center; /* başlık ortalı */
+}
+
+.blog-item .blog-info-center a:hover {
+  color: #e1bb40;
+}
+
+/* READ MORE */
+.blog-item .blog-info-bottom a {
+  font-size: 14px;
+  color: #6d5c4d;
+  text-decoration: none;
+  border-bottom: 1px solid #6d5c4d;
+  padding-bottom: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.blog-item .blog-info-bottom a:hover {
+  color: #e1bb40;
+  border-color: #e1bb40;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-item .blog-info {
+    padding: 20px 10px;
+  }
+
+  .blog-item .blog-info-center a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-item .blog-info-center a {
+    font-size: 17px;
+  }
+
+  .blog-item .blog-info-bottom a {
+    font-size: 13px;
+  }
+}

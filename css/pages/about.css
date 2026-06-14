@@ -1,0 +1,111 @@
+/* about.css */
+.about-page {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 20px 20px 0px #f4f1ec;
+  object-fit: cover;
+  display: block;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #c29d59;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  text-align: center;
+  gap: 30px;
+}
+
+.value-item {
+  flex: 1;
+}
+
+.value-item i {
+  font-size: 40px;
+  color: #c29d59;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.value-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #111;
+}
+
+.value-item p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-image img {
+    box-shadow: none;
+  }
+
+  .about-content h1 {
+    font-size: 32px;
+  }
+
+  .values-grid {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .value-item {
+    margin-bottom: 30px;
+  }
+}

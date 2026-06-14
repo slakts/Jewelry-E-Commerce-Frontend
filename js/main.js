@@ -1,0 +1,10 @@
+import "./menu.js";
+import "./slider.js";
+import "./cart.js";
+import "./checkout.js";
+import "./coupon.js";
+import "./payment.js";
+import "./city-district.js";
+import "./cart-system.js";
+import "./cart-page.js";
+import "./single-product.js";

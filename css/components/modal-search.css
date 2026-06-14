@@ -1,0 +1,68 @@
+/* Genişleyen Arama Kutusu */
+.search-bar {
+  --size: 35px;
+  --padding: 6px;
+  --expanded-width: 210px;
+  display: flex;
+  color: #6d5c4d;
+  justify-content: flex-end;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: var(--padding);
+  width: var(--size);
+  height: var(--size);
+  transition: width 0.4s ease, border 0.4s ease;
+}
+.search-bar:focus-within {
+  width: var(--expanded-width);
+  border: 1px solid #6d5c4d;
+}
+.search-input {
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #6d5c4d;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-inline: 10px;
+  flex: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.search-bar:focus-within .search-input {
+  opacity: 1;
+}
+/* Arama Butonu */
+.search-submit {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: auto;
+  aspect-ratio: unset;
+  transition: color 0.3s ease;
+}
+/* Arama İkonu Görünümü */
+.search-submit i {
+  font-size: 18px; /* Diğer ikonlarla aynı boyut */
+  color: #6d5c4d; /* Kahverengi tonu */
+  transition: color 0.3s ease;
+  display: flex;
+}
+.search-submit:hover i {
+  color: #e1bb40; /* Hover’da altın tonu */
+}
+/*! search responsive  */
+@media (max-width: 992px) {
+  .modal-search .modal-wrapper {
+    max-width: 370px;
+  }
+  .modal-search .results {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,129 @@
+/* Contact-bottom genel */
+.contact .contact-bottom {
+  margin: 40px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.contact-bottom .contact-titles {
+  width: 75%;
+}
+
+.contact-bottom .contact-titles h4 {
+  color: #e1bb40; /* vurgu rengi */
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-bottom .contact-titles h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.contact-bottom .contact-titles p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6d5c4d;
+}
+
+.contact-bottom .contact-elements {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.contact-bottom .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-bottom .contact-form > div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 10px);
+  font-size: 14px;
+  row-gap: 6px;
+}
+
+.contact-bottom .contact-form > div label span {
+  color: #e1bb40; /* vurgu rengi */
+}
+
+.contact-bottom .contact-form > div:nth-child(3),
+.contact-bottom .contact-form > div:nth-child(4) {
+  flex-basis: 100%;
+}
+
+.contact-bottom .contact-form .btn {
+  background-color: #e1bb40; /* vurgu rengi */
+  color: #fff;
+  border-color: #e1bb40;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.contact-bottom .contact-form .btn:hover {
+  background-color: #d4a81c;
+  border-color: #d4a81c;
+  color: #fff;
+}
+
+.contact-elements .contact-info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  font-size: 14px;
+  color: #6d5c4d;
+}
+
+.contact-info-item .contact-info-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-item .contact-street {
+  margin: 10px 0;
+}
+
+.contact-info-item .contact-date {
+  margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-bottom .contact-titles {
+    width: 100%;
+  }
+
+  .contact-bottom .contact-elements {
+    flex-direction: column;
+    gap: 50px !important;
+  }
+
+  .contact-bottom .contact-form > div {
+    flex-basis: 100%;
+  }
+
+  .contact-elements .contact-info {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-bottom .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-bottom .contact-form > div {
+    flex-basis: 100%;
+  }
+}

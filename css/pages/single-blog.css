@@ -1,0 +1,115 @@
+.single-blog {
+  margin-top: 40px;
+}
+
+/* Görsel */
+.single-blog figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Meta alanı */
+.single-blog .blog-wrapper .blog-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  font-size: 12px;
+  margin: 20px 0 18px 0;
+  color: #6d5c4d;
+}
+
+/* Category */
+.single-blog .blog-wrapper .blog-category a {
+  display: flex;
+  color: #6d5c4d;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* Tarih */
+.single-blog .blog-wrapper .blog-date a {
+  color: #6d5c4d;
+  font-weight: 500;
+}
+
+.single-blog .blog-wrapper .blog-date {
+  position: relative;
+  padding: 0 12px;
+}
+
+.single-blog .blog-wrapper .blog-date::before,
+.single-blog .blog-wrapper .blog-date::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 1px;
+  background-color: #d4af37; /* gold */
+}
+
+.single-blog .blog-wrapper .blog-date::before {
+  left: -2px;
+}
+
+.single-blog .blog-wrapper .blog-date::after {
+  right: -2px;
+}
+
+/* Etiketler */
+.single-blog .blog-wrapper .blog-tags a {
+  color: #6d5c4d;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.single-blog .blog-wrapper .blog-tags a:hover {
+  opacity: 1;
+}
+
+/* BAŞLIK */
+.single-blog .blog-wrapper .blog-title {
+  font-size: 26px; /* daha zarif */
+  font-weight: 600;
+  color: #56493f;
+  margin: 5px 0 15px 0;
+  line-height: 1.25;
+  font-family: "Cinzel", serif; /* ürün başlığı ile uyum */
+}
+
+/* İçerik */
+.single-blog .blog-wrapper .blog-content {
+  margin-bottom: 12px;
+}
+
+.single-blog .blog-wrapper .blog-content p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #6d5c4d; /* single-product renkleri */
+  margin-bottom: 10px;
+}
+
+/* Alıntı */
+.single-blog .blog-wrapper .blog-content blockquote {
+  padding: 15px 20px 12px 35px; /* daha kompakt */
+  border-left: 4px solid #d4af37; /* gold - site uyumu */
+  margin: 15px 0;
+  background: #f8f4ee; /* çok hafif krem / modern */
+  border-radius: 4px;
+}
+
+.single-blog .blog-wrapper .blog-content blockquote p {
+  margin-bottom: 0;
+  font-style: italic;
+  color: #6d5c4d;
+  margin: 20px 0;
+}
+
+.tab-panel-reviews h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px; /* avatar ile başlık arasına boşluk */
+  color: #56493F; /* istersen kaldırabiliriz */
+}

@@ -1,0 +1,16 @@
+/* SINGLE PRODUCT TOPBAR */
+.single-topbar {
+  margin-top: 30px;
+  margin-bottom: 20px; /* breadcrumb ile içerik arasında ferahlık */
+}
+
+/* SINGLE PRODUCT CONTENT */
+.single-content {
+  margin: 30px 0;     /* üst ve alt boşluk aynı, diğer section'larla eşit */
+}
+
+.single-content .site-main {
+  display: flex;
+  gap: 20px;          /* ürün görseli ve bilgi arasındaki boşluk */
+  align-items: flex-start; /* üstten hizalama */
+}

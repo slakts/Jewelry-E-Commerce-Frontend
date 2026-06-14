@@ -1,0 +1,520 @@
+.cart-page {
+  margin: 40px 60px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px 0px;
+}
+
+.cart-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/*! cart form start */
+
+.cart-page .cart-form {
+  flex-basis: 60%;
+}
+
+/* ============================
+   PROGRESS BAR – ALTIN TEMALI
+   ============================ */
+
+.cart-page .free-progress-bar {
+  border: 1px solid #e8e1d5;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  background: #faf7f2;
+}
+
+.cart-page .progress-bar-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.cart-page .progress-bar-title strong {
+  color: #c29d59; /* Altın */
+}
+
+.cart-page .progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #e4ded2;
+  border-radius: 10px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.cart-page .progress-bar span {
+  background-color: #c29d59; /* Altın */
+  width: 35%;
+  height: 6px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* ============================
+   TABLE – ürün listesi
+   ============================ */
+
+.cart-form table img {
+  width: 65px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-form .shop-table-wrapper {
+  overflow-x: auto;
+}
+
+.cart-form table > :not(caption) > * > * {
+  padding: 12px 5px;
+}
+
+.cart-form table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+  min-width: 600px;
+}
+
+.cart-form table thead th {
+  text-align: start;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.cart-form table tbody {
+  border-top: 1px solid #e8e1d5;
+}
+
+.cart-form table tbody .cart-item {
+  border-bottom: 1px solid #e8e1d5;
+}
+
+.cart-form table tbody .cart-image {
+  position: relative;
+}
+
+/* Ödeme Sayfasına Git Butonu Tasarımı */
+.checkout .btn-checkout {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  background-color: #c29d59; /* CSS'inizdeki ana altın rengi */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout .btn-checkout:hover {
+  background-color: #a98343; /* CSS'inizdeki koyu altın hover rengi */
+  color: #fff;
+}
+
+/* Mobil cihazlar için yazı tipini küçültme (CSS'inizdeki kuralla uyumlu) */
+@media (max-width: 768px) {
+  .checkout .btn-checkout {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* DELETE BUTTON */
+
+.delete-cart {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #111;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.delete-cart i {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.delete-cart:hover {
+  background-color: #c29d59;
+}
+
+.cart-form table tbody i:hover {
+  background-color: #c29d59; /* Altın hover */
+}
+
+/* ============================
+   ACTIONS – kupon & güncelle
+   ============================ */
+
+.actions-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.actions-wrapper .coupon {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.actions-wrapper .coupon button {
+  background-color: #111;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.actions-wrapper .coupon button:hover {
+  background-color: #333;
+}
+
+.actions-wrapper .coupon input {
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #d8d2c6;
+  padding: 0 10px;
+}
+
+.actions-wrapper .update-cart button {
+  background-color: #c29d59; /* Altın */
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.actions-wrapper .update-cart button:hover {
+  background-color: #a98343; /* Daha koyu altın */
+}
+
+/* ============================
+   COLLATERALS – sağ kutucuk
+   ============================ */
+
+.cart-collaterals {
+  flex: 0 0 300px;
+  border: 1px solid #e8e1d5;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #faf7f2;
+}
+
+.cart-collaterals table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-collaterals h2 {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e1d5;
+  color: #111;
+}
+
+.cart-collaterals table * {
+  font-size: 14px;
+}
+
+.cart-collaterals table tr:not(:last-child) {
+  border-bottom: 1px solid #e8e1d5;
+}
+
+.cart-collaterals table th {
+  text-align: start;
+  padding: 18px 0 10px 0;
+  font-weight: 500;
+  color: #222;
+}
+
+.cart-collaterals table td {
+  text-align: end;
+  padding: 18px 0 10px 0;
+  color: #333;
+}
+
+.cart-collaterals table ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.cart-collaterals table ul label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 6px;
+}
+
+.cart-collaterals table ul a {
+  color: #c29d59;
+  font-weight: 500;
+}
+
+.cart-collaterals table strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* CHECKOUT BUTTON */
+.cart-collaterals .checkout button {
+  margin-top: 25px;
+  background-color: #c29d59;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.cart-collaterals .checkout button:hover {
+  background-color: #a98343;
+}
+
+
+/* Kupon disabled */
+
+.coupon button:disabled,
+.coupon input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* İndirim satırı */
+
+.discount-row th,
+.discount-row td {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .cart-page {
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .cart-page-wrapper {
+    gap: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .cart-page {
+    margin: 20px 15px;
+    width: auto;
+  }
+
+  .cart-page-wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .cart-page .cart-form {
+    flex-basis: 100%;
+  }
+
+  .cart-collaterals {
+    width: 100%;
+    flex: unset;
+  }
+
+  .actions-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions-wrapper .coupon {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions-wrapper .coupon input,
+  .actions-wrapper .coupon button,
+  .actions-wrapper .update-cart button {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   CART PAGE - MOBİL VE TELEFON UYUMLU DÜZENLEMELER
+   ============================================================ */
+
+/* Tablet ve Altı (992px altı) */
+@media (max-width: 992px) {
+  .cart-page {
+    margin: 20px 15px;
+    width: auto;
+  }
+
+  .cart-page-wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .cart-page .cart-form {
+    flex-basis: 100%;
+  }
+
+  .cart-collaterals {
+    width: 100%;
+    flex: unset;
+  }
+}
+
+/* Telefon Ekranları (768px altı) - TABLOYU KART YAPISINA ÇEVİRME */
+@media (max-width: 768px) {
+  /* Tabloyu dikey listeye çeviriyoruz */
+  .cart-form table, 
+  .cart-form thead, 
+  .cart-form tbody, 
+  .cart-form th, 
+  .cart-form td, 
+  .cart-form tr { 
+    display: block; 
+  }
+
+  /* Masaüstü başlıklarını gizle */
+  .cart-form thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .cart-form tr {
+    border: 1px solid #e8e1d5;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  }
+
+  .cart-form td { 
+    border: none;
+    position: relative;
+    padding-left: 50% !important; 
+    text-align: right;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px dashed #eee;
+  }
+
+  .cart-form td:last-child { border-bottom: none; }
+
+  /* Hücrelerin başına etiket ekleme */
+  .cart-form td:before { 
+    position: absolute;
+    left: 10px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+    color: #111;
+  }
+
+  /* Sütun isimlerini mobilde yan tarafa yazdırıyoruz */
+  .cart-form td:nth-of-type(2):before { content: "Ürün Görseli"; }
+  .cart-form td:nth-of-type(3):before { content: "Ürün Adı"; }
+  .cart-form td:nth-of-type(4):before { content: "Fiyat"; }
+  .cart-form td:nth-of-type(5):before { content: "Adet"; }
+  .cart-form td:nth-of-type(6):before { content: "Ara Toplam"; }
+
+  /* Görsel alanını özel düzenleme */
+  .cart-form .cart-image {
+    padding-left: 10px !important;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px !important;
+  }
+  .cart-form .cart-image:before { display: none; }
+  
+  .cart-form table img {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .delete-cart {
+    left: auto;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #ff4d4d; /* Mobilde daha belirgin kırmızı */
+  }
+
+  .quantity-input {
+    justify-content: flex-end;
+  }
+
+  /* Alt butonlar (Kupon ve Güncelle) */
+  .actions-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .actions-wrapper .coupon,
+  .actions-wrapper .update-cart {
+    width: 100%;
+  }
+
+  .actions-wrapper .coupon input,
+  .actions-wrapper .coupon button,
+  .actions-wrapper .update-cart button {
+    width: 100%;
+    height: 48px;
+  }
+}

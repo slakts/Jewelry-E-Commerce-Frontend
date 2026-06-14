@@ -1,0 +1,62 @@
+/* SINGLE PRODUCT GALLERY */
+.single-product .product-gallery {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.single-product .single-image-wrapper img {
+  width: 90%; /* görsel biraz küçültüldü */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* modern gölge */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.single-product .single-image-wrapper img:hover {
+  cursor: zoom-in;
+  transform: scale(1.02);
+}
+
+/* Thumbnail list */
+.single-product .gallery-thumbs {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 15px;
+}
+
+.single-product .gallery-thumbs li {
+  cursor: pointer;
+  display: flex;
+}
+
+.single-product .gallery-thumbs li img {
+  width: 65px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.single-product .gallery-thumbs li img.active {
+  border-color: #6d5c4d; /* senin bronz kahve */
+}
+
+.single-product .gallery-thumbs li img:hover {
+  border-color: #e1bb40; /* senin altın tonu */
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .single-product .product-gallery {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .single-product .single-image-wrapper img {
+    width: 100%;
+  }
+  .single-product .gallery-thumbs li img {
+    width: 55px;
+  }
+}

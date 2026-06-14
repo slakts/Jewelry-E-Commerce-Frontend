@@ -1,0 +1,350 @@
+/* =========================
+   CHECKOUT PAGE
+========================= */
+
+.checkout-page {
+  margin: 40px 60px;
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.checkout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  align-items: flex-start;
+}
+
+/* =========================
+   LEFT SIDE - FORM
+========================= */
+
+.checkout-form-container {
+  flex: 1;
+}
+
+.checkout-form {
+  border: 1px solid #e8e1d5;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: #faf7f2;
+}
+
+.checkout-form h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #111;
+  font-weight: 600;
+  border-bottom: 1px solid #e8e1d5;
+  padding-bottom: 15px;
+}
+
+/* =========================
+   CREDIT CARD FORM
+========================= */
+
+.credit-card-form {
+  margin-top: 20px;
+}
+
+.card-row {
+  display: flex;
+  gap: 15px;
+}
+
+.card-row .form-group {
+  flex: 1;
+}
+
+.credit-card-form input {
+  width: 100%;
+}
+
+.payment-item.active-payment {
+  border-color: #c29d59;
+  background-color: #fffdf8;
+}
+
+#card-number {
+  letter-spacing: 2px;
+}
+
+#card-cvv {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .card-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* FORM */
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Select görünümü */
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23999' stroke-width='2'%3e%3cpath d='M5 7l5 5 5-5'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px;
+  cursor: pointer;
+}
+
+.form-group select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #d8d2c6;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #c29d59;
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* =========================
+   RIGHT SIDE - SUMMARY
+========================= */
+
+.checkout-sidebar {
+  width: 380px;
+}
+
+.order-summary-box {
+  border: 1px solid #e8e1d5;
+  border-radius: 12px;
+  padding: 28px;
+  background-color: #faf7f2;
+  position: sticky;
+  top: 30px;
+}
+
+.order-summary-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #111;
+  border-bottom: 1px solid #e8e1d5;
+  padding-bottom: 15px;
+}
+
+/* TABLE */
+
+.checkout-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.checkout-table th,
+.checkout-table td {
+  padding: 15px 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.checkout-table thead {
+  border-bottom: 1px solid #e8e1d5;
+}
+
+.checkout-table tbody tr {
+  border-bottom: 1px solid #e8e1d5;
+}
+
+.checkout-table tfoot tr:not(:last-child) {
+  border-bottom: 1px solid #e8e1d5;
+}
+
+.checkout-table td:last-child,
+.checkout-table th:last-child {
+  text-align: right;
+}
+
+.order-total strong {
+  font-size: 18px;
+  color: #111;
+}
+
+/* =========================
+   PAYMENT METHODS
+========================= */
+
+.payment-methods {
+  margin-top: 25px;
+}
+
+.payment-item {
+  border: 1px solid #e8e1d5;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.payment-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.payment-item label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+  color: #222;
+}
+
+.payment-desc {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-place-order {
+  width: 100%;
+  margin-top: 25px;
+  background-color: #c29d59;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-place-order:hover {
+  background-color: #a98343;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .checkout-page {
+    margin: 20px 15px;
+  }
+
+  .checkout-wrapper {
+    flex-direction: column;
+  }
+
+  .checkout-sidebar {
+    width: 100%;
+  }
+
+  .order-summary-box {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-page {
+    margin: 15px 10px;
+    padding: 20px 0;
+  }
+
+  .checkout-form,
+  .order-summary-box {
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .checkout-form h2,
+  .order-summary-box h2 {
+    font-size: 18px;
+  }
+}
+
+/* Form hata mesajı */
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 6px;
+  display: block;
+}
+
+/* Hatalı input */
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+}
+
+/* Disabled button */
+
+.btn-place-order:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .checkout-form,
+  .order-summary-box {
+    padding: 16px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .checkout-table th,
+  .checkout-table td {
+    font-size: 13px;
+  }
+
+  .btn-place-order {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
